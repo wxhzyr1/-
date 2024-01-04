@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?d9oc1l');
+    src: url('fonts/icomoon.eot?d9oc1l#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?d9oc1l') format('truetype'), url('fonts/icomoon.woff?d9oc1l') format('woff'), url('fonts/icomoon.svg?d9oc1l#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+/* 公共 */
+
+body {
+    min-width: 1519.2px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+
+
+/* 渐显 */
+
+@keyframes display {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+body {
+    border: 1px solid transparent;
+}
+
+.clean {
+    clear: both;
+}
+
+li {
+    list-style-type: none;
+}
+
+.sk {
+    position: sticky;
+    width: 100%;
+    background-color: transparent;
+    float: left;
+    top: 0px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: display 1s linear forwards;
+    z-index: 1;
+}
+
+.head {
+    position: relative;
+    background-color: rgba(86, 94, 209, .7);
+    float: left;
+    width: 100%;
+}
+
+.head div:nth-child(1) {
+    display: inline-block;
+    margin-top: -5px;
+    margin-left: 170px;
+    font-size: 49px;
+    color: #fff;
+}
+
+.head div:nth-child(2) {
+    position: absolute;
+    top: 27px;
+    left: 229px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.head ul {
+    display: inline-block;
+    margin-left: 120px;
+}
+
+.head ul li {
+    position: relative;
+    float: left;
+    font-size: 26px;
+    color: rgb(38, 76, 110);
+    padding: 0px 41px;
+    padding-top: 16px;
+    padding-bottom: 9px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.head ul li:hover {
+    color: rgb(199, 243, 149);
+    background-color: rgba(190, 123, 235, 0.7);
+}
+
+.head-div img {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.head-div {
+    margin-top: 8px;
+    height: 48px;
+    float: right;
+    margin-right: 163px;
+    font-size: 22px;
+}
+
+
+/* 尾部版权 */
+
+.footer {
+    height: 200px;
+    background-color: #5ee6f3bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content p {
+    line-height: 196%;
+}

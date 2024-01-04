@@ -1,0 +1,145 @@
+.head ul a:nth-child(5) li {
+    color: #fff;
+    background-color: rgba(116, 178, 202, .7);
+}
+
+.bigbox {
+    width: 100%;
+    height: 743px;
+    background: url(img/甘雨大背景.jpg);
+    background-size: 100% 100%;
+    padding-top: 1px;
+}
+@keyframes b{
+    0%{
+        margin-top: 30%;
+    }
+    100%{
+        margin-top: 7%;
+    }
+}
+.main {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 7%;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 50px;
+    border: 1px solid black;
+    transition: all 1s;
+    animation: b 1s linear forwards;
+}
+
+.part-1 {
+    width: 60%;
+    float: left;
+    height: 100%;
+    background-color: transparent;
+    padding-top: 33px;
+}
+
+.part-1 p {
+    font-size: 30px;
+    line-height: 40px;
+    text-indent: 2em;
+}
+
+.part-2 {
+    background-color: transparent;
+    width: 40%;
+    float: right;
+    height: 80%;
+    margin-top: 102px;
+    position: relative;
+}
+
+.part-2 img {
+    position: absolute;
+    width: 100%;
+    border-radius: 50px;
+    border-bottom-left-radius: 0px;
+    transition: all .5s;
+}
+
+.part-2 img:nth-child(2) {
+    opacity: 0;
+}
+.part-2 img:nth-child(1) {
+    opacity: 1;
+}
+.part-1 ul li {
+    font-family: 'icomoon';
+    font-size: 48px;
+    margin-top: 72px;
+    margin-left: 137px;
+    color: rgb(78, 81, 83);
+    float: left;
+    transition: all .5s;
+    position: relative;
+}
+
+.part-1 ul li:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: transparent;
+}
+.coin{
+    position: absolute;
+    margin-top: 128px;
+    margin-left: 233px;
+    display: none;
+}
+.coin div:nth-child(1){
+    position: absolute;
+    top: 1px;
+    left: 101px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-top: 1px solid black;
+    border-left:1px solid black;
+    transform: rotateZ(45deg);
+    z-index: 1;
+}
+.coin div:nth-child(2){
+    border: 1px solid black;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    white-space: nowrap;
+}
+.coin div img{
+    width: 100px;
+    height: 100px;
+    padding: 10px 10px;
+}
+.friend{
+    position: absolute;
+    margin-top: 128px;
+    margin-left: 420px;
+    display: none;
+}
+.friend div:nth-child(1){
+    position: absolute;
+    top: 1px;
+    left: 101px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-top: 1px solid black;
+    border-left:1px solid black;
+    transform: rotateZ(45deg);
+    z-index: 1;
+}
+.friend div:nth-child(2){
+    border: 1px solid black;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    white-space: nowrap;
+}
+.friend div img{
+    width: 100px;
+    height: 100px;
+    padding: 10px 10px;
+}
